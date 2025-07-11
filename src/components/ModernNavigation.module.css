@@ -71,7 +71,7 @@
 @media (max-width: 640px) {
   .modern-nav {
     gap: 4px;
-    padding: 6px;
+    padding: 8px;
   }
 
   .nav-item {

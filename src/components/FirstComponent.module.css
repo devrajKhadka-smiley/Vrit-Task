@@ -1,0 +1,163 @@
+.first-component {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.components-content {
+  position: relative;
+  width: 100vw;     /* full viewport width */
+  height: 100vh;    /* full viewport height */
+  max-width: none;  /* remove max-width limit */
+  overflow: hidden; /* prevent scrolling */
+}
+
+
+/* Floating icons (parent positioned absolutely) */
+.floating-icon-gustos,
+.floating-icon-happy,
+.floating-icon-like,
+.floating-icon-trophy {
+  position: absolute;
+  width: 90px;
+  height: auto;
+  animation: floatGently 5s ease-in-out infinite;
+}
+
+/* GIFs inside (no absolute needed now) */
+.floating-icon-gustos img,
+.floating-icon-happy img,
+.floating-icon-like img,
+.floating-icon-trophy img {
+  width: 100%;
+  height: auto;
+}
+
+/* Positioning each icon */
+.floating-icon-gustos {
+  top: 40px;
+  left: 60px;
+}
+
+.floating-icon-happy {
+  top: 100px;
+  right: 80px;
+}
+
+.floating-icon-like {
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.floating-icon-trophy {
+  bottom: 60px;
+  right: 100px;
+}
+
+/* Centered text block */
+.written-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #1f2937;
+  z-index: 5;
+}
+
+.main-heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.skill-masters {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.masters-text {
+  color: #4ade80;
+}
+
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 2px solid black;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #2563eb;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.link-text,
+.link-icon {
+  transition: transform 0.3s ease;
+}
+
+.view-all-link:hover .link-text {
+  transform: translateX(-4px);
+}
+
+.view-all-link:hover .link-icon {
+  transform: translateX(6px);
+}
+
+/* Profile Images */
+.profile-images {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 3;
+}
+
+.profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: float 6s ease-in-out infinite;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating animations */
+@keyframes floatGently {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
