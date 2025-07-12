@@ -1,6 +1,7 @@
 .first-component {
   height: 100vh;
-  background: white;
+  /* background: white; */
+  background-color: F8F8FF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,7 +146,7 @@
   border: 2px solid black;
   margin-top: 1rem;
   font-size: 1rem;
-  color: #2563eb;
+  color: #555e33;
   padding: 10px 25px;
   text-decoration: none;
   border-radius: 40px;
@@ -165,7 +166,6 @@
   transform: translateX(6px);
 }
 
-/* Floating animations */
 @keyframes floatGently {
   0%,
   100% {
@@ -203,7 +203,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5),
     /* main soft shadow */ 0 0 8px rgba(255, 255, 255, 0.05); /* faint glow */
 }
-
 
 /* Smooth transition for all floating elements */
 .components-content > div {
@@ -251,7 +250,6 @@
   bottom: 250px;
   right: 34%;
 }
-
 
 .masters-text {
   color: #4ade80;

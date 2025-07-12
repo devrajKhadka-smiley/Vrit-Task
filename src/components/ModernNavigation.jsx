@@ -6,7 +6,7 @@ import styles from './ModernNavigation.module.css';
 const navItems = [
   { id: 'home', label: 'Task 1', icon: ClipboardCheck },
   { id: 'documents', label: 'Task 2', icon: FileText },
-  { id: 'apps', label: 'Task 3', icon: Grid3X3 },
+  // { id: 'apps', label: 'Task 3', icon: Grid3X3 },
 ];
 
 // Component function with props

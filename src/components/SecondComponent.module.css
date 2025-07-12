@@ -1,0 +1,882 @@
+.journey-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.green-text {
+  color: #2ecc71;
+}
+
+.black-text {
+  color: #2c3e50;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+.card-clarity {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+  color: white;
+}
+
+.card-doing {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  color: white;
+}
+
+.card-mentored {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.card-showcase {
+  background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+  color: white;
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  height: 60px;
+}
+
+.illustration {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+  position: relative;
+}
+
+.illustration img {
+  font-size: 2px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.subtitle-text {
+  font-size: 16px;
+  margin: 0 0 16px 0;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* Character Illustrations */
+.character {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Confused Character */
+.character-confused .head {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 60px;
+  height: 50px;
+}
+
+.character-confused .hair {
+  background: #2c3e50;
+  width: 60px;
+  height: 35px;
+  border-radius: 30px 30px 20px 20px;
+  position: absolute;
+  top: 0;
+}
+
+.character-confused .face {
+  background: #fdbcb4;
+  width: 50px;
+  height: 40px;
+  border-radius: 25px;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+}
+
+.glasses {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+}
+
+.lens {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #2c3e50;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+}
+
+.lens.left {
+  left: 0;
+}
+
+.lens.right {
+  right: 0;
+}
+
+.bridge {
+  width: 8px;
+  height: 2px;
+  background: #2c3e50;
+  position: absolute;
+  top: 7px;
+  left: 17px;
+}
+
+.character-confused .body {
+  position: absolute;
+  top: 55px;
+  left: 25px;
+  width: 70px;
+  height: 60px;
+}
+
+.character-confused .shirt {
+  background: #f39c12;
+  width: 50px;
+  height: 40px;
+  border-radius: 25px 25px 10px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.character-confused .arms {
+  position: absolute;
+  top: 15px;
+}
+
+.character-confused .arm {
+  background: #f39c12;
+  width: 15px;
+  height: 30px;
+  border-radius: 8px;
+  position: absolute;
+}
+
+.character-confused .arm.left {
+  left: -5px;
+  transform: rotate(-20deg);
+}
+
+.character-confused .arm.right {
+  right: -5px;
+  transform: rotate(20deg);
+}
+
+/* Working Character */
+.character-working .head {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 50px;
+  height: 45px;
+}
+
+.hair-dark {
+  background: #2c3e50;
+  width: 50px;
+  height: 30px;
+  border-radius: 25px 25px 15px 15px;
+  position: absolute;
+  top: 0;
+}
+
+.character-working .face {
+  background: #fdbcb4;
+  width: 40px;
+  height: 35px;
+  border-radius: 20px;
+  position: absolute;
+  top: 12px;
+  left: 5px;
+}
+
+.character-working .body {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  width: 60px;
+  height: 50px;
+}
+
+.shirt-yellow {
+  background: #f1c40f;
+  width: 40px;
+  height: 35px;
+  border-radius: 20px 20px 8px 8px;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.vest {
+  background: #3498db;
+  width: 35px;
+  height: 30px;
+  border-radius: 15px 15px 5px 5px;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.laptop {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 40px;
+  height: 25px;
+}
+
+.screen {
+  background: #34495e;
+  width: 35px;
+  height: 20px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+}
+
+.keyboard {
+  background: #bdc3c7;
+  width: 40px;
+  height: 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Support Character */
+.character-support .head {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 55px;
+  height: 45px;
+}
+
+.hair-brown {
+  background: #8b4513;
+  width: 55px;
+  height: 30px;
+  border-radius: 27px 27px 15px 15px;
+  position: absolute;
+  top: 0;
+}
+
+.character-support .face {
+  background: #fdbcb4;
+  width: 45px;
+  height: 35px;
+  border-radius: 22px;
+  position: absolute;
+  top: 12px;
+  left: 5px;
+}
+
+.character-support .body {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  width: 65px;
+  height: 50px;
+}
+
+.shirt-blue {
+  background: #f1c40f;
+  width: 45px;
+  height: 35px;
+  border-radius: 22px 22px 8px 8px;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.jacket {
+  background: #3498db;
+  width: 50px;
+  height: 40px;
+  border-radius: 25px 25px 10px 10px;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+}
+
+.headphones {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 65px;
+  height: 40px;
+}
+
+.headband {
+  background: #2c3e50;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+.ear-cup {
+  background: #2c3e50;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+}
+
+.ear-cup.left {
+  left: 0;
+}
+
+.ear-cup.right {
+  right: 0;
+}
+
+/* Portfolio Character */
+.character-portfolio .head {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  width: 50px;
+  height: 45px;
+}
+
+.hair-curly {
+  background: #8b4513;
+  width: 50px;
+  height: 30px;
+  border-radius: 25px 25px 15px 15px;
+  position: absolute;
+  top: 0;
+}
+
+.glasses-round {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+}
+
+.glasses-round .lens {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #2c3e50;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+}
+
+.glasses-round .lens.left {
+  left: 0;
+}
+
+.glasses-round .lens.right {
+  right: 8px;
+}
+
+.character-portfolio .face {
+  background: #fdbcb4;
+  width: 40px;
+  height: 35px;
+  border-radius: 20px;
+  position: absolute;
+  top: 12px;
+  left: 5px;
+}
+
+.character-portfolio .body {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 60px;
+  height: 50px;
+}
+
+.shirt-yellow-2 {
+  background: #f1c40f;
+  width: 40px;
+  height: 35px;
+  border-radius: 20px 20px 8px 8px;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.vest-blue {
+  background: #3498db;
+  width: 35px;
+  height: 30px;
+  border-radius: 17px 17px 5px 5px;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.portfolio {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 35px;
+  height: 25px;
+}
+
+.folder {
+  background: #e67e22;
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+}
+
+.papers {
+  background: white;
+  width: 25px;
+  height: 15px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 3px;
+  left: 2px;
+}
+
+.eyes {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+
+.eye {
+  width: 3px;
+  height: 3px;
+  background: #2c3e50;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.eye.left {
+  left: 0;
+}
+
+.eye.right {
+  right: -8px;
+}
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .card {
+    padding: 30px;
+    min-height: 280px;
+  }
+
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .illustration {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  transition: transform 0.3s ease;
+}
+
+.card-clarity {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+  color: white;
+  position: relative;
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  height: 6px;
+  transition: opacity 0.4s ease;
+  opacity: 1;
+}
+
+.card-clarity:hover .card-content {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.illustration {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.subtitle-text {
+  font-size: 16px;
+  margin: 0 0 16px 0;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* === Hero Wrapper === */
+.hero-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.card-clarity:hover .hero-wrapper {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Hero Inner Content */
+
+.hero-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hero-image {
+  /* width: 100%; */
+  height: 250px;
+  width: auto;
+  border-radius: 12px;
+}
+
+/* Navigation buttons (optional) */
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+  margin-top: 10px;
+}
+
+.nav-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Indicators */
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .card {
+    padding: 30px;
+    min-height: 280px;
+  }
+
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .illustration {
+    margin: 0 auto 20px auto;
+  }
+
+  .hero-image {
+    max-width: 90%;
+  }
+}
+
+.hero-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.card-clarity:hover .hero-wrapper {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box {
+  position: relative;
+  text-align: center;
+}
+
+/* .hero-title {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 8px;
+} */
+
+.hero-image {
+  height: 200px;
+  width: auto;
+  border-radius: 12px;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav-button.left {
+  left: -50px;
+}
+
+.nav-button.right {
+  right: -50px;
+}
+
+.slide-indicators {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+.hero-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background-color: #5492a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.card-clarity:hover .hero-wrapper {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-box {
+  position: relative;
+  text-align: center;
+}
+
+.hero-title {
+  position: absolute;
+  top: -40px;
+  left: 10%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 20px;
+  text-align: left; 
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav-button.left {
+  left: -50px;
+}
+
+.nav-button.right {
+  right: -50px;
+}
+
+.slide-indicators {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}
